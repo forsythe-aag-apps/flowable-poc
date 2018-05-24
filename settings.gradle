@@ -1,0 +1,5 @@
+rootProject.name = 'bpmn-poc'
+include 'client-review-service'
+include 'account-review-service'
+include 'client-service'
+
