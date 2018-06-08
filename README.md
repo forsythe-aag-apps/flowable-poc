@@ -21,3 +21,17 @@ Then you can access Flowable Admin and deploy there the business process definit
 Then you can start the microservices and test the functionality:
 
 You can send POST request to http://localhost:8081/clients with necessary body client information. And the you can go to admin and check the process created.
+
+Then you can go and make necessary changes:
+
+http://localhost:8081/task/complete/{processId}
+
+To complete the current task.
+
+And send the catch signal event:
+
+http://localhost:8081/signal/send/{signal} - this is broadcast signal event
+
+http://localhost:8081/signal/send/{processId}/{signal} - this is signal event for one particular process
+
+You can monitor the current state of the process using Flowable Admin (find the process, open it, select Show Diagram).
